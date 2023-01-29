@@ -212,8 +212,7 @@ hr {
     font-size: small;
 }
 
-@media screen and ((max-width: 870px) or (orientation: portrait)) {
-
+@media screen and (max-width: 870px) {
     .header-right .info {
         grid-template-columns: 1fr;
     }
@@ -229,4 +228,18 @@ hr {
     .column {
         width: 100%;
     }
-  }
+}
+
+@media screen and (orientation: portrait) {
+    .header-right .subtitle {
+        font-size: larger;
+    }
+
+    .header-right .info {
+        font-size: larger;
+    }
+
+    .navigation {
+        font-size: x-large;
+    }
+}
