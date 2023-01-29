@@ -208,7 +208,7 @@ hr {
     font-size: small;
 }
 
-@media screen and (max-width: 870px) {
+@media screen and ((max-width: 870px) or (orientation: portrait)) {
 
     .header-right .name {
         font-size: larger;
