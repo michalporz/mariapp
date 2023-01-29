@@ -184,6 +184,10 @@ hr {
     margin-bottom: 5%;
 }
 
+.about .about-content {
+    font-size: medium;
+}
+
 .about h2 {
     font-size: x-large;
     color: #3e3e3e;
@@ -210,16 +214,7 @@ hr {
 
 @media screen and ((max-width: 870px) or (orientation: portrait)) {
 
-    .header-right .name {
-        font-size: larger;
-    }
-
-    .header-right .subtitle {
-        font-size: medium;
-    }
-
     .header-right .info {
-        font-size: small;
         grid-template-columns: 1fr;
     }
 
