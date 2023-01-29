@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>Maria Pinkowska-Porzycka</title>
+</head>
+
+<body>
+
+    <script>
+        window.onload = function() {
+            var elements = document.getElementsByClassName("navbar");
+            if (elements) {
+                    var navbar = elements.item(0);
+                    var sticky = navbar.offsetTop;
+
+                    window.onscroll = function() {
+                        moveNavbar();
+                    };
+
+                    function moveNavbar() {
+                        if (window.pageYOffset >= sticky) {
+                            navbar.classList.add("sticky")
+                        } else {
+                            navbar.classList.remove("sticky");
+                        }
+                    }
+            }
+        }
+
+        var email = "bWFyaWFwaW5rb3dza2FAd3AucGw=";
+
+        function mailto() {
+            var link = document.getElementById("email-link");
+            address = "mailto:".concat(atob(email));
+            window.location.href = address;
+        }
+
+        function copyEmailToClipboard() {
+            navigator.clipboard.writeText(atob(email));
+        }
+    </script>
+
+    <div class="header" id="header">
+        <div class="header-left">
+            <img src="static/maria3.jpg" onload="this.style.opacity=1">
+        </div>
+        <div class="header-right">
+            <span class="name">Maria Pinkowska-Porzycka</span>
+            <div class="subtitle">Type + DTP</div>
+            <div class="info">
+                <div><strong>E-mail:</strong> </div>
+                <div>
+                    <button class="plain-button" id="email-link" onclick="mailto()">napisz</button> lub 
+                    <button class="plain-button" id="email-copy" onclick="copyEmailToClipboard()">skopiuj do schowka</button>
+                </div>
+                <div><strong>Linkedin: </strong></div>
+                <div><a href="https://www.linkedin.com/in/maria-pinkowska-porzycka">linkedin.com/in/maria-pinkowska-porzycka</a></div>
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class="navbar" id="navbar">
+        <div class="navigation">
+            <a href="#header">Home</a>
+            &middot;
+            <a href="#content">Moje prace</a>
+            &middot;
+            <a href="#about">O mnie</a>
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class="content" id="content">
+        <div class="row">
+            <div class="column">
+                <img src="static/bruit_1.png" alt="Font Bruit" onload="this.style.opacity=1">
+                <img src="static/bruit_2.png" alt="Font Bruit" onload="this.style.opacity=1">
+                <img src="static/bruit_3.png" alt="Font Bruit" onload="this.style.opacity=1">
+            </div>
+            <div class="column">
+                <img src="static/bruit_4.png" alt="Font Bruit" onload="this.style.opacity=1">
+                <img src="static/bruit_5.png" alt="Font Bruit" onload="this.style.opacity=1">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="static/dyplom_1.jpg" alt="Font Bruit" onload="this.style.opacity=1" style="max-width: 827px">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="static/polo_2.jpg" alt="Font Polo" onload="this.style.opacity=1">
+            </div>
+            <div class="column">
+                <img src="static/polo_1.jpg" alt="Font Polo" onload="this.style.opacity=1">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="static/bnf.png" alt="Brave New Font" onload="this.style.opacity=1">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="static/jazz_nad_odra.jpg" alt="Plakat Jazz nad Odrą" onload="this.style.opacity=1">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="static/plakaty.jpg" alt="Plakaty" onload="this.style.opacity=1">
+            </div>
+            <div class="column">
+                <img src="static/swieto_wroclawia.jpg" alt="Plakaty" onload="this.style.opacity=1">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="static/ksiazka.jpg" alt="Książka" onload="this.style.opacity=1">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="static/sowa.jpg" alt="Sowa" onload="this.style.opacity=1">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="static/portf_3.jpg" alt="Kalendarz" onload="this.style.opacity=1">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="static/obraz.jpg" alt="Portret" onload="this.style.opacity=1">
+            </div>
+            <div class="column">
+                <img src="static/cypr.png" alt="Pejzaż" onload="this.style.opacity=1">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="static/sr.jpg" alt="Samych Radości" onload="this.style.opacity=1">
+            </div>
+            <div class="column">
+                <img src="static/zaproszenie.jpg" alt="Zaproszenie" onload="this.style.opacity=1">
+            </div>
+        </div>
+    </div>
+
+    <hr id="about"/>
+
+    <div class="about">
+        <h2>O mnie</h3>
+        <div><em>For english version, <a href="#about-en">click here</a>.</em></div>
+        <div class="about-content">
+            Ukończyłam Grafikę na&nbsp;ASP we&nbsp;Wrocławiu, specjalizuję&nbsp;się w&nbsp;projektowaniu fontów.
+            Obecnie mam pięcioletnie doświadczenie jako grafik DTP.
+            Na co dzień pracuję w&nbsp;narzędziach z&nbsp;pakietu Adobe (głównie InDesign, Illustrator i&nbsp;Photoshop).
+            Hobbystycznie zajmuję&nbsp;się również ilustracją (komputerową i&nbsp;tradycyjną) i&nbsp;animacją &ndash; potrafię pracować w&nbsp;Adobe Premiere oraz&nbsp;After Effects.
+        </div>
+        <h3>Kontakt</h3>
+        <div class="about-content">
+            Możesz skontaktować się ze mną przez e-mail
+            (<button class="plain-button" id="email-link" onclick="mailto()">napisz</button>
+            lub 
+            <button class="plain-button" id="email-copy" onclick="copyEmailToClipboard()">skopiuj do schowka</button>),
+            albo przez mój profil na Linkedin: <a href="https://www.linkedin.com/in/maria-pinkowska-porzycka">linkedin.com/in/maria-pinkowska-porzycka</a>.
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class="about" id="about-en">
+        <h2>About</h3>
+        <div class="about-content">
+            I've graduated&nbsp;from Graphic Design studies&nbsp;at&nbsp;the Academy of&nbsp;Fine Arts in&nbsp;Wrocław.
+            I&nbsp;specialize in&nbsp;designing fonts.
+            Currently I&nbsp;have five years of&nbsp;experience in&nbsp;desktop publishing.
+            In&nbsp;my everyday work I&nbsp;use Adobe Creative Cloud applications (mostly InDesign, Illustrator and&nbsp;Photoshop).
+            In&nbsp;my spare time I'm&nbsp;passionate about illustration (both digital&nbsp;and traditional) and&nbsp;animation &ndash; I&nbsp;can work with&nbsp;Adobe Premiere and&nbsp;After Effects as&nbsp;well.
+        </div>
+        <h3>Contact information</h3>
+        <div class="about-content">
+            You can contact me via e-mail
+            (<button class="plain-button" id="email-link" onclick="mailto()">write to me</button>
+            or 
+            <button class="plain-button" id="email-copy" onclick="copyEmailToClipboard()">copy my address to clipboard</button>),
+            or via my Linkedin profile: <a href="https://www.linkedin.com/in/maria-pinkowska-porzycka">linkedin.com/in/maria-pinkowska-porzycka</a>.
+        </div>
+    </div>
+
+    <hr/>
+    <div class="footer">Maria Pinkowska-Porzycka &#169; 2023</div>
+
+
+</body>
+
+</html>
