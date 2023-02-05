@@ -1,7 +1,6 @@
 html {
     font-family: Roboto;
     font-size: large;
-    scroll-behavior: smooth;
     color: #3e3e3e;
 }
 
@@ -236,8 +235,17 @@ hr {
         font-size: 4vw;
     }
 
+    .header {
+        flex-direction: column;
+    }
+
     .header-left {
-        display: none;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .header-right {
+        width: 100%;
     }
 
     .header-right .name {
@@ -281,7 +289,7 @@ hr {
         font-size: 5vw;
     }
 
-    .about .abount-content {
+    .about .about-content {
         font-size: 4vw;
     }
 
