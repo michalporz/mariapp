@@ -211,26 +211,7 @@ hr {
     font-size: small;
 }
 
-/* @media screen and (max-width: 870px) {
-    .header-right .info {
-        grid-template-columns: 1fr;
-    }
-
-    .row {
-        flex-wrap: wrap;
-    }
-
-    .row img {
-        width: 100%;
-    }
-    
-    .column {
-        width: 100%;
-    }
-} */
-
-@media only screen and (orientation: portrait) {
-/* @media only screen and (hover: none) and (pointer: coarse){ */
+@media only screen and ((orientation: portrait) or ((hover: none) and (pointer: coarse))) {
     html {
         font-size: 4vw;
     }
