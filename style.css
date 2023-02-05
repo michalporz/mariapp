@@ -212,7 +212,7 @@ hr {
     font-size: small;
 }
 
-@media screen and (max-width: 870px) {
+/* @media screen and (max-width: 870px) {
     .header-right .info {
         grid-template-columns: 1fr;
     }
@@ -228,18 +228,31 @@ hr {
     .column {
         width: 100%;
     }
-}
+} */
 
 @media screen and (orientation: portrait) {
     .header-right .subtitle {
         font-size: larger;
     }
 
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .row img {
+        width: 100%;
+    }
+
     .header-right .info {
         font-size: larger;
+        grid-template-columns: 1fr;
     }
 
     .navigation {
-        font-size: x-large;
+        font-size: xx-large;
+    }
+
+    .column {
+        width: 100%;
     }
 }
