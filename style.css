@@ -232,8 +232,20 @@ hr {
 
 @media only screen and (orientation: portrait) {
 /* @media only screen and (hover: none) and (pointer: coarse){ */
+    html {
+        font-size: 4vw;
+    }
+
+    .header-left {
+        display: none;
+    }
+
+    .header-right .name {
+        font-size: 6vw;
+    }
+
     .header-right .subtitle {
-        font-size: larger;
+        font-size: 4vw;
     }
 
     .row {
@@ -245,15 +257,37 @@ hr {
     }
 
     .header-right .info {
-        font-size: larger;
+        font-size: 4vw;
         grid-template-columns: 1fr;
     }
 
     .navigation {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .column {
         width: 100%;
+    }
+
+    .about {
+        font-size: 4vw;
+    }
+
+    .about h2 {
+        font-size: 5vw;
+    }
+
+    .about h3 {
+        font-size: 5vw;
+    }
+
+    .about .abount-content {
+        font-size: 4vw;
+    }
+
+    .footer {
+        font-size: 4vw;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 }
