@@ -230,7 +230,7 @@ hr {
     }
 } */
 
-@media screen and (orientation: portrait) {
+@media only screen and (hover: none) and (pointer: coarse){
     .header-right .subtitle {
         font-size: larger;
     }
